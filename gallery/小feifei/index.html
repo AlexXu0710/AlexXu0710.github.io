@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="星之卡比猪🐖">
+    <meta name="keywords" content="小feifei, 星之卡比猪🐖">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>星之卡比猪🐖</title>
+    <title>小feifei | 星之卡比猪🐖</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -327,56 +327,9 @@
 
 </header>
 
-    
-<style>
-    .carousel-control {
-        width: 45px;
-        height: 45px;
-        line-height: 55px;
-        border-radius: 45px;
-        background: transparent;
-        cursor: pointer;
-        z-index: 100;
-    }
-
-    #prev-cover {
-        position: absolute;
-        top: 48%;
-        left: 8px;
-    }
-
-    #next-cover {
-        position: absolute;
-        top: 48%;
-        right: 8px;;
-    }
-
-    #prev-cover i {
-        margin-right: 3px;
-    }
-
-    #next-cover i {
-        margin-left: 3px;
-    }
-
-    .carousel-control:hover {
-        background-color: rgba(0, 0, 0, .4);
-    }
-
-    .carousel-control i {
-        color: #fff;
-        font-size: 2.4rem;
-    }
-</style>
-
-
-
-<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-    
-
-    <div class="carousel-item red white-text bg-cover about-cover">
-        <div class="container">
-            <div class="row">
+    <!-- 加密功能 -->  <script src="/libs/cryptojs/crypto-js.min.js"></script> <script> (function() { let pwd = '46aa9f4deeafde3bd9724237641bb5dfdad4b3db76ed0eab85cfb30957ae60d9'; if (pwd && pwd.length > 0) { if (pwd !== CryptoJS.SHA256(prompt('该相册已加密，请输入密码访问')).toString(CryptoJS.enc.Hex)) { alert('密码错误，将返回主页！'); location.href = '/'; } } })(); </script>  <!-- <div class="bg-cover pd-header about-cover">
+    <div class="container">
+    <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
         <div class="brand">
             <div class="title center-align">
@@ -413,259 +366,8 @@
 </script>
 
 
-
-            <div class="cover-btns">
-                <a href="#articles" class="waves-effect waves-light btn">
-                    <i class="fa fa-angle-double-down"></i>Start
-                </a>
-
-                
-                    <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light btn" target="_blank">
-                        <i class="fab fa-github-alt"></i>Github
-                    </a>
-                
-            </div>
-            <div class="cover-social-link">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
-
-</div>
-        </div>
     </div>
-
-    
-</div>
-
-<script>
-    $(function () {
-        let coverSlider = $('.carousel');
-
-        //用户触摸轮播自动 restartPlay 是否生效
-        let initUserPressedOrDraggedActive = false
-
-        //用户触摸轮播自动 restartPlay
-        function initUserPressedOrDragged(instance) {
-            setInterval(() => {
-                if (instance.pressed || instance.dragged) {
-                    // console.log('initUserPressedOrDragged: ',instance.pressed,instance.dragged)
-                    restartPlay()
-                }
-            }, 1000)
-        }
-
-        coverSlider.carousel({
-            duration: Number('120'),
-            fullWidth: true,
-            indicators: 'true' === 'true',
-            onCycleTo() {
-                if (!initUserPressedOrDraggedActive) {
-                    // console.log('initUserPressedOrDraggedActive')
-                    initUserPressedOrDragged(this)
-                    initUserPressedOrDraggedActive = true
-                }
-            },
-        })
-
-        let carouselIntervalId;
-        
-        // Loop to call the next cover article picture.
-        let autoCarousel = function () {
-            carouselIntervalId = setInterval(function () {
-                coverSlider.carousel('next');
-            }, 5000);
-        };
-        autoCarousel();
-        
-
-        function restartPlay() {
-            
-            clearInterval(carouselIntervalId);
-            autoCarousel();
-            
-        };
-
-        
-        // prev and next cover post.
-        $('#prev-cover').click(function () {
-            coverSlider.carousel('prev');
-            restartPlay();
-        });
-        $('#next-cover').click(function () {
-            coverSlider.carousel('next');
-            restartPlay();
-        });
-        
-    });
-</script>
-
-
-
-<main class="content">
-
-    
-    <div id="indexCard" class="index-card">
-        <div class="container ">
-            <div class="card">
-                <div class="card-content">
-                    
-                        <div class="dream">
-    
-    <div class="title center-align">
-        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;about
-    </div>
-    
-    <div class="row">
-        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            世上只有一种真正的英雄主义，那就是认清生活的真相，依然热爱生活。——罗曼罗兰《米开朗基罗传》序
-        </div>
-    </div>
-</div>
-
-                    
-
-                    
-
-                    
-
-                    
-                    <div id="recommend-sections" class="recommend">
-                        
-
-
-
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
-    
-
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/08/21/blog/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="blog">
-                            
-                            <span class="card-title">blog</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                first blogniu niu niu
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-21
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/c/" class="post-category">
-                                    c++
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/java/">
-                            <span class="chip bg-color">java</span>
-                        </a>
-                        
-                        <a href="/tags/c/">
-                            <span class="chip bg-color">c++</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/08/13/hello-world/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                            
-                            <span class="card-title">Hello World</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-13
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                许文星
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-        </div>
-    </article>
-
-</main>
-
-
+</div> --> <link rel="stylesheet" href=""> <!-- 该主题自带的lightGallery.js在图片多的时候会很卡，所以弃用，使用了一个我在网上找的baguetteBox，很轻量级，就是功能少了点 --> <script src=""></script> <style> .my-gallery .photo img { transition: all 0.6s ease-in-out; } .my-gallery .photo:hover img { opacity: 0.6; transform: scale(1.05); } .my-gallery { margin: 20px auto; } .miaoshus .title { font-family: MV Boli; } .miaoshus { padding: 20px; border: 1px dashed #e6e6e6; color: #969696; position: relative; display: inline-block; width: 75%; background: #fbfbfb50; border-radius: 10px; font-size: 16px; margin: 24px auto 12px; } body.dark .miaoshus { background: 0 0; border: 1px dashed #888; } body { overflow: visible!important; } .box { position: relative; } .box img { width: 350px; vertical-align: top; padding: 8px; border-radius: 10px; transition: all 0.5s; } .box img:hover { transform: scale(1.05); } .page-footer { display: none } body { overflow-y: visible!important; } header { background-color: #000; } .biaotiss { font-family: MV Boli; } @media only screen and (max-width: 1058px) { .box { margin-left: 145px; } } @media only screen and (max-width: 770px) { .box { margin-left: 15px; } } @media only screen and (max-width: 500px) { #previous-button, #next-button { display: none; } } @media only screen and (max-width: 380px) { .box { margin-left: -5px; } } @media only screen and (max-width: 323px) { .box img { width: 296px; left: 0; } } </style> <div class="tag-title center-align"> <div class="miaoshus"> <div class="title center-align"> “  小feifei  ” </div> “ 光影流年 ” “ 这里有光影流年，还有两朵穿衣裳的云，相拥在明天的河岸。” </div> </div> <!-- 相册 --> <section class="gallery"> <div id="myGallery" class="my-gallery"> <div class="row"> <div class="box">  </div> </div> </div> </section> <script> $(function () { // 获取图片的宽度(200px) let imgWidth = $('.mat').outerWidth(); // 200 waterfallHandler(); // 瀑布流处理 function waterfallHandler() { // 获取图片的列数 let column = parseInt($(window).width() / imgWidth); // 高度数组 let heightArr = []; for(let i=0; i<column; i++) { heightArr[i] = 0; } // 遍历所有图片进行定位处理 $.each($('.mat'), function (index, item) { // 当前元素的高度 let itemHeight = $(item).outerHeight(); // 高度数组最小的高度 let minHeight = Math.min(...heightArr); // 高度数组最小的高度的索引 let minIndex = heightArr.indexOf(minHeight); $(item).css({ position: 'absolute', top: minHeight + 'px', left: minIndex * imgWidth + 'px' }); heightArr[minIndex] += itemHeight; }); } // 窗口大小改变 $(window).resize(function () { waterfallHandler(); }); }); </script> <script> baguetteBox.run('.gallery', { // 配置参数 buttons:Boolean,//是否显示导航按钮。 noScrollbars:true,//是否在显示时隐藏滚动条。 titleTag:true,//是否使用图片上的title属性作为图片标题 async:false,//是否异步加载文件。 }); start() $(window).on('scroll', function(){ start(); }) function start(){ //.not('[data-isLoaded]')选中已加载的图片不需要重新加载 $('.gallery img').not('[data-isLoaded]').each(function(){ var $node = $(this) if( isShow($node) ){ loadImg($node); } }); } //判断一个元素是不是出现在窗口(视野) function isShow($node){ return $node.offset().top <= $(window).height() + $(window).scrollTop(); } //加载图片 function loadImg($img){ //.attr(值) //.attr(属性名称,值) $img.attr('src', $img.attr('data-src')); //把data-src的值 赋值给src $img.attr('data-isLoaded', 1);//已加载的图片做标记 } </script>
 
 
     <footer class="page-footer bg-color">

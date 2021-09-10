@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-08-21T06:48:45.129Z</updated>
+  <updated>2021-09-10T06:32:22.083Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ENT week one</title>
+    <link href="http://example.com/2021/09/10/ENT-week-one/"/>
+    <id>http://example.com/2021/09/10/ENT-week-one/</id>
+    <published>2021-09-10T06:28:33.000Z</published>
+    <updated>2021-09-10T06:32:22.083Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="ENT-203"><a href="#ENT-203" class="headerlink" title="ENT 203"></a>ENT 203</h1><h2 id="Lecture-1"><a href="#Lecture-1" class="headerlink" title="Lecture 1"></a>Lecture 1</h2><h3 id="aim-of-module-leadership-and-communication"><a href="#aim-of-module-leadership-and-communication" class="headerlink" title="aim of module: leadership and communication"></a>aim of module: leadership and communication</h3><img src="https://s3.bmp.ovh/imgs/2021/09/da50a944f4376bcd.png" style="zoom: 50%;" /><h3 id="assessment"><a href="#assessment" class="headerlink" title="assessment"></a>assessment</h3><p>cw: case analysis(40%) + project(60%)</p><hr><h3 id="COMMUNICATION-（identity-Image-reputation）"><a href="#COMMUNICATION-（identity-Image-reputation）" class="headerlink" title="COMMUNICATION （identity, Image reputation）"></a>COMMUNICATION （identity, Image reputation）</h3><h4 id="what-is"><a href="#what-is" class="headerlink" title="what is"></a>what is</h4><p>Communication is the transfer of meaning from one entity to another using mutually understood signs, symbols and language.(交流是使用相互理解的符号、符号和语言将意义从一个实体转移到另一个实体。)</p><h4 id="types-of-communications"><a href="#types-of-communications" class="headerlink" title="types of communications"></a>types of communications</h4><ol><li>management communication<ol start="2"><li>marketing communication<ol start="3"><li>corporate/organizational communication</li></ol></li></ol></li></ol><p>Marketing Mix(4Ps): product, price, place and promotion</p><h4 id="essentials-of-corporate-communication"><a href="#essentials-of-corporate-communication" class="headerlink" title="essentials of corporate communication"></a>essentials of corporate communication</h4><img src="https://s3.bmp.ovh/imgs/2021/09/542ac7399a7abdf6.jpg" style="zoom: 67%;" /><p>Stakeholders(利益相关者) : firm with government, investors, political groups, suppliers, trade associations, emploeeys, communities and etc.</p><h4 id="identity-image-reputation"><a href="#identity-image-reputation" class="headerlink" title="identity, image, reputation"></a>identity, image, reputation</h4><p><strong>Corporate Personality 个性<br>Distinctive and favorable image 独特<br>Trustworthiness and credibility 可信度</strong></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;ENT-203&quot;&gt;&lt;a href=&quot;#ENT-203&quot; class=&quot;headerlink&quot; title=&quot;ENT 203&quot;&gt;&lt;/a&gt;ENT 203&lt;/h1&gt;&lt;h2 id=&quot;Lecture-1&quot;&gt;&lt;a href=&quot;#Lecture-1&quot; class=&quot;header</summary>
+      
+    
+    
+    
+    <category term="ENT203" scheme="http://example.com/categories/ENT203/"/>
+    
+    
+    <category term="ENT 203" scheme="http://example.com/tags/ENT-203/"/>
+    
+  </entry>
   
   <entry>
     <title>blog</title>
